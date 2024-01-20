@@ -19,9 +19,9 @@ const config = {
   baseUrl: '/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: '2000Arion', // Usually your GitHub org/user name.
-  projectName: 'gsc-docs', // Usually your repo name.
+  // If you aren't using GitHub pages, you don't need these.~ok!
+  //organizationName: '2000Arion', // Usually your GitHub org/user name.
+  //projectName: 'gsc-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
