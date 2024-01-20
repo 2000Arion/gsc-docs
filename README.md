@@ -55,7 +55,7 @@ This command generates static content into the `build` directory and can be serv
 ## For codespaces
 
 ```sh
-npm install docusaurus
+npm install
 ```
 
 ```sh
