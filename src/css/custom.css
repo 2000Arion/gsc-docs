@@ -19,12 +19,104 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #22d3ee;
+  --ifm-color-primary-dark: #11c8e3;
+  --ifm-color-primary-darker: #11bcd7;
+  --ifm-color-primary-darkest: #0e9bb1;
+  --ifm-color-primary-light: #3bd8f0;
+  --ifm-color-primary-lighter: #48dbf1;
+  --ifm-color-primary-lightest: #6ee2f4;
+  --ifm-background-color: #ffffff;
+  background-color: #33404d;
+}
+
+/* Navbar styling similar to Pterodactyl */
+.navbar {
+  background-color: #1f2933; /* Hintergrundfarbe der Navbar */
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); /* Farbe der unteren Grenze */
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  padding: 10px 20px; /* Innenabstand der Navbar */
+}
+
+/* Navbar-Logo */
+.navbar__brand {
+  color: #cad1d8; /* Farbe des Logos */
+  font-size: 24px; /* Größe des Logos */
+  font-weight: bold;
+}
+
+.navbar__brand:hover {
+  color: #e5e8eb;
+}
+
+/* Navbar-Links */
+.navbar__links {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar-Link-Elemente */
+.navbar__item {
+  margin-right: 3px; /* Abstand zwischen den Navbar-Links */
+}
+
+/* Navbar-Link-Text */
+.navbar__link {
+  color: #9aa5b1; /* Farbe der Navbar-Links */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative; /* Setzen Sie die Position auf relative, um das Pseudo-Element zu positionieren */
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.navbar__link:hover {
+  color: #e5e8eb;
+  background-color: #131A20;
+}
+
+/* Aktiver Navbar-Link */
+.navbar__link--active {
+  color: #9aa5b1; /* Farbe für den aktiven Navbar-Link */
+}
+
+.navbar__link--active::after {
+  content: ""; /* Pseudo-Element-Inhalt */
+  display: block;
+  position: absolute;
+  bottom: 0; /* Positioniert das Pseudo-Element am unteren Rand des Links */
+  left: 50%; /* Zentriert das Pseudo-Element horizontal */
+  transform: translateX(-50%);
+  width: 100%;
+  height: 3px; /* Höhe des blauen Strichs */
+  background-color: rgb(8, 145, 178); /* Farbe des blauen Strichs */
+}
+
+.footer {
+  background-color: #3F4D5A;
+}
+
+.footer__title {
+  color: #e6e8ea;
+}
+
+.footer__link-item {
+  color: #9AA5B1;
+  transition: none;
+}
+
+.footer__copyright {
+  color: #9AA5B1;
+  transition: none;
+}
+
+.footer__copyright a {
+  color: #9AA5B1;
+  transition: none;
+}
+
+.footer a:hover {
+  color: #ced1d5;
 }
