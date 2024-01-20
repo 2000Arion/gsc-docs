@@ -20,7 +20,7 @@ body:
     id: location-link
     attributes:
       label: Link to the page in the documentation
-      placeholder: https://example.com/...
+      placeholder: https://...
     validations:
       required: true
 
