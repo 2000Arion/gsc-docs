@@ -102,31 +102,31 @@ const config = {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
+              {
+                label: 'Blog',
+                to: '/blog'
+              }
             ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.arion2000.xyz',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Hilfe erhalten',
+                to: '/support',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Mehr',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'GSC-Panel Login',
+                href: 'https://panel.arion2000.xyz/',
               },
               {
                 label: 'GitHub',

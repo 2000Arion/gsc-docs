@@ -35,7 +35,7 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -51,14 +51,21 @@ function Feature({Svg, title, description}) {
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+    <>
+      <label>
+        <div className={styles.alert}>
+          <span className={styles.alertText}><img src="/img/info_icon.svg" className={styles.infoSvg}></img>&nbsp;Hier soll eine Dokumentation für die Gameservercloud entstehen. Es würde uns freuen, wenn du auf&nbsp;<a href="https://github.com/2000Arion/gsc-docs" target="_blank">GitHub</a>&nbsp;beim Aufbau der Dokumentation mithilfst!&nbsp;</span>
         </div>
-      </div>
-    </section>
+      </label>
+      <section className={styles.features}>
+        <div className="container">
+          <div className="row">
+            {FeatureList.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
