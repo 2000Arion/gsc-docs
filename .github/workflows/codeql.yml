@@ -13,7 +13,7 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ "main", "docusaurus-3-template" ]
+    branches: [ "main", "experimental", "content-preview" ]
   pull_request:
     branches: [ "main" ]
   schedule:
