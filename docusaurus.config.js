@@ -6,7 +6,7 @@
 
 import { themes as prismThemes } from 'prism-react-renderer';
 import { inject } from '@vercel/analytics';
- 
+
 inject();
 
 /** @type {import('@docusaurus/types').Config} */
@@ -48,6 +48,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/2000Arion/gsc-docs/tree/main/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
