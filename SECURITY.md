@@ -8,9 +8,12 @@ Welcome to the Security Policy of the Arion2000.xyz Gameservers Documentation! T
 
 Please refer to this section to understand which versions of the documentation are currently supported with security updates.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 0.0.1   | :white_check_mark: |
+| Version | Supported           |
+| ------- | ------------------- |
+| 1.0.0   | :white_check_mark:  |
+| 0.0.x   | :white_check_mark:¹ |
+
+¹*This version is only supported until February 3, 2024.*
 
 ## Reporting a Vulnerability
 
