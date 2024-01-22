@@ -97,7 +97,7 @@ const config = {
             'aria-label': 'GSC-Panel Login',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/2000Arion/gsc-docs',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub Repository',
