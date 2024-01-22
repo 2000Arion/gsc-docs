@@ -53,10 +53,16 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+
+          blogSidebarTitle: 'Aktuelle Beiträge',
+          blogSidebarCount: 10,
+
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/2000Arion/gsc-docs/tree/main/',
+
+          routeBasePath: 'news',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -89,7 +95,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/news', label: 'Neuigkeiten', position: 'right' },
           {
             href: 'https://panel.arion2000.xyz',
             position: 'right',
@@ -112,12 +118,8 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/tutorial/intro',
               },
-              {
-                label: 'Blog',
-                to: '/blog'
-              }
             ],
           },
           {
@@ -136,6 +138,10 @@ const config = {
           {
             title: 'Mehr',
             items: [
+              {
+                label: 'Neuigkeiten',
+                to: '/news',
+              },
               {
                 label: 'GSC-Panel Login',
                 href: 'https://panel.arion2000.xyz/',
