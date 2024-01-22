@@ -91,9 +91,16 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/2000Arion/gsc-docs',
-            label: 'GitHub',
+            href: 'https://panel.arion2000.xyz',
             position: 'right',
+            label: 'Zum Panel',
+            'aria-label': 'GSC-Panel Login',
+          },
+          {
+            href: 'https://github.com/facebook/docusaurus',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub Repository',
           },
         ],
       },
