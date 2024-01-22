@@ -9,6 +9,16 @@ import { inject } from '@vercel/analytics';
 
 inject();
 
+let gh_editPath;
+
+if (process.env.HOST == "docs.arion2000.xyz") {
+  gh_editPath = "https://github.com/2000Arion/gsc-docs/tree/main/"
+} else if (process.env.HOST == "pre.docs.arion2000.xyz") {
+  gh_editPath = "https://github.com/2000Arion/gsc-docs/tree/content-preview/"
+} else {
+  gh_editPath = "https://github.com/2000Arion/gsc-docs/tree/experimental/"
+}
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Arion2000.xyz Gameservers',
@@ -46,8 +56,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/2000Arion/gsc-docs/tree/main/',
+          editUrl: `${gh_editPath}`,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -59,8 +68,7 @@ const config = {
 
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/2000Arion/gsc-docs/tree/main/',
+          editUrl: `${gh_editPath}`,
 
           routeBasePath: 'news',
         },
