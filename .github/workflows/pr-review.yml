@@ -39,8 +39,10 @@ jobs:
       if: steps.read-config.outputs.config_exists == 'true'
       run: |
         config=$(echo "${{ steps.read-config.outputs.stdout }}" | jq -r '.reviewers')
-        current_reviewers=$(gh pr review-list -R $GITHUB_REPOSITORY -q '.state=="APPROVED" | .user.login' | sort | uniq -c | sort -n)
         pr_author=$(gh pr view ${{ github.event.number }} --json user.login --template '{{json user.login}}')
+
+        current_reviewers=$(gh pr review-list -R $GITHUB_REPOSITORY --json state,author.login --template '{{range .}}{{json .state}},{{json .author.login}}\n{{end}}' | grep -E 'APPROVED,' | cut -d ',' -f 2 | sort | uniq -c | sort -n | awk '{print $2}')
+
 
         selected_reviewer=$(python -c "
         import json
