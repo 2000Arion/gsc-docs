@@ -1,0 +1,64 @@
+name: Pick Reviewer
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  select-reviewer:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Read Config File
+      id: read-config
+      run: |
+        config_file=.github/reviewers.json
+        if [ -f "$config_file" ]; then
+          echo "::set-output name=config_exists::true"
+          cat "$config_file"
+        else
+          echo "::set-output name=config_exists::false"
+        fi
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install jq
+
+    - name: Determine Reviewer
+      id: determine-reviewer
+      if: steps.read-config.outputs.config_exists == 'true'
+      run: |
+        config=$(echo "${{ steps.read-config.outputs.stdout }}" | jq -r '.reviewers')
+        current_reviewers=$(gh pr review-list -R $GITHUB_REPOSITORY -q '.state=="APPROVED" | .user.login' | sort | uniq -c | sort -n)
+        
+        selected_reviewer=$(python -c "
+        import json
+
+        config = json.loads('''$config''')
+        current_reviewers = '''$current_reviewers'''.split()
+        reviewer_counts = {reviewer: 0 for reviewer in config}
+
+        for reviewer in current_reviewers:
+          if reviewer in reviewer_counts:
+              reviewer_counts[reviewer] += 1
+
+        selected_reviewer = min(reviewer_counts, key=reviewer_counts.get)
+        print(selected_reviewer)
+        ")
+
+        echo "::set-output name=selected_reviewer::$selected_reviewer"
+
+    - name: Add Reviewer to Pull Request
+      if: steps.determine-reviewer.outputs.selected_reviewer != ''
+      run: |
+        gh pr review-request -R $GITHUB_REPOSITORY -B $GITHUB_HEAD_REF -u "${{ steps.determine-reviewer.outputs.selected_reviewer }}"
