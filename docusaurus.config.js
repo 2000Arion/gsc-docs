@@ -5,6 +5,19 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from 'prism-react-renderer';
+import { inject } from '@vercel/analytics';
+
+inject();
+
+let gh_editPath;
+
+if (process.env.HOST == "docs.arion2000.xyz") {
+  gh_editPath = "https://github.com/2000Arion/gsc-docs/tree/main/"
+} else if (process.env.HOST == "pre.docs.arion2000.xyz") {
+  gh_editPath = "https://github.com/2000Arion/gsc-docs/tree/content-preview/"
+} else {
+  gh_editPath = "https://github.com/2000Arion/gsc-docs/tree/experimental/"
+}
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -43,15 +56,21 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/2000Arion/gsc-docs/tree/main/',
+          editUrl: `${gh_editPath}`,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
+
+          blogSidebarTitle: 'Aktuelle Beiträge',
+          blogSidebarCount: 10,
+
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/2000Arion/gsc-docs/tree/main/',
+          editUrl: `${gh_editPath}`,
+
+          routeBasePath: 'news',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -84,11 +103,18 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/news', label: 'Neuigkeiten', position: 'right' },
+          {
+            href: 'https://panel.arion2000.xyz',
+            position: 'right',
+            label: 'Zum Panel',
+            'aria-label': 'GSC-Panel Login',
+          },
           {
             href: 'https://github.com/2000Arion/gsc-docs',
-            label: 'GitHub',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub Repository',
           },
         ],
       },
@@ -100,12 +126,8 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/tutorial/intro',
               },
-              {
-                label: 'Blog',
-                to: '/blog'
-              }
             ],
           },
           {
@@ -124,6 +146,10 @@ const config = {
           {
             title: 'Mehr',
             items: [
+              {
+                label: 'Neuigkeiten',
+                to: '/news',
+              },
               {
                 label: 'GSC-Panel Login',
                 href: 'https://panel.arion2000.xyz/',
