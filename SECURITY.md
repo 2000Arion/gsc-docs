@@ -2,15 +2,19 @@
 
 Welcome to the Security Policy of the Arion2000.xyz Gameservers Documentation! This document outlines the guidelines and procedures for reporting and addressing security vulnerabilities. Please read this information carefully to understand how we handle security-related matters. If you would like to contact us via email regarding a security issue, send an email to [tickets@arion2000.xyz](mailto:tickets@arion2000.xyz).
 
-*Last Updated: January 20, 2024*
+*Last Updated: January 22, 2024*
 
 ## Supported Versions
 
 Please refer to this section to understand which versions of the documentation are currently supported with security updates.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 0.0.1   | :white_check_mark: |
+| Version | Supported           |
+| ------- | ------------------- |
+| 1.1.x   | :white_check_mark:  |
+| 1.0.0   | :white_check_mark:¹ |
+| 0.0.x   | :white_check_mark:¹ |
+
+¹*This version is only supported until February 3, 2024.*
 
 ## Reporting a Vulnerability
 
