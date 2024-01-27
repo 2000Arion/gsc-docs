@@ -18,6 +18,7 @@ if (process.env.HOST == "docs.arion2000.xyz") {
 } else {
   gh_editPath = "https://github.com/2000Arion/gsc-docs/tree/experimental/"
 }
+console.log(`[Debug]: gh_editPath = ${gh_editPath}`)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -99,9 +100,21 @@ const config = {
         items: [
           {
             type: 'docSidebar',
+            sidebarId: 'minecraftSidebar',
+            position: 'left',
+            label: 'Minecraft',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'genericSidebar',
+            position: 'left',
+            label: 'Discord Bots',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docusaurus Tutorial',
           },
           { to: '/news', label: 'Neuigkeiten', position: 'right' },
           {
