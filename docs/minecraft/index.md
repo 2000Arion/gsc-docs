@@ -4,8 +4,6 @@ sidebar_position: 1
 
 # Einführung
 
-( Minecraft )
-
 :::caution[Bitte beachten!]
 Diese Seite wird noch bearbeitet!
 :::
