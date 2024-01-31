@@ -35,6 +35,8 @@ jobs:
         pip install jq
 
     - name: Determine Reviewer
+      env:
+        GH_TOKEN: ${{ secrets.TOKEN }}
       id: determine-reviewer
       if: steps.read-config.outputs.config_exists == 'true'
       run: |
