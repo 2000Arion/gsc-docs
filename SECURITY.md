@@ -11,10 +11,8 @@ Please refer to this section to understand which versions of the documentation a
 | Version | Supported           |
 | ------- | ------------------- |
 | 1.1.x   | :white_check_mark:  |
-| 1.0.0   | :white_check_mark:¹ |
-| 0.0.x   | :white_check_mark:¹ |
-
-¹*This version is only supported until February 3, 2024.*
+| 1.0.0   | :x:                 |
+| 0.0.x   | :x:                 |
 
 ## Reporting a Vulnerability
 
