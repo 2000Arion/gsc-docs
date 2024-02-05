@@ -4,7 +4,7 @@
 
 Thank you for considering contributing to the documentation of [Arion2000.xyz Gameservers](https://panel.arion2000.xyz/). This repository is dedicated to providing comprehensive information about the game server hosting services offered by *Arion2000.xyz Gameservers*.
 
-Before you start contributing, please familiarize yourself with our [Code of Conduct](https://github.com/2000Arion/gsc-docs?tab=coc-ov-file#contributor-covenant-code-of-conduct) and review our [Security Policy](https://github.com/2000Arion/gsc-docs?tab=security-ov-file#security-policy).
+Before doing certain things such as submitting ideas or reporting bugs, you may want to familiarize yourself with our [Code of Conduct](https://github.com/2000Arion/gsc-docs?tab=coc-ov-file#contributor-covenant-code-of-conduct) or review our [Security Policy](https://github.com/2000Arion/gsc-docs?tab=security-ov-file#security-policy).
 
 ### Branches
 
