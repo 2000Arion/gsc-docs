@@ -14,7 +14,7 @@ We maintain three branches in this repository:
 
 - content-preview: Feel free to contribute new content or test changes in this branch. Preview your work at [pre.docs.arion2000.xyz](https://pre.docs.arion2000.xyz).
 
-- experimental: This development branch is dedicated to implementing new technical features for the documentation, excluding content. Explore and experiment at [dev.arion2000.xyz](https://dev.arion2000.xyz).
+- experimental: This development branch is dedicated to implementing new technical features for the documentation, excluding content. Preview your work for this branch at [dev.arion2000.xyz](https://dev.arion2000.xyz).
 
 ## How to Contribute
 
