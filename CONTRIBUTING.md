@@ -27,7 +27,7 @@ Use the [Issues](https://github.com/2000Arion/gsc-docs/issues/new/choose) tab to
 
 ### Pull Requests
 
-Contribute directly to the repository by creating [Pull Requests](https://github.com/2000Arion/gsc-docs/pulls). Ensure your changes align with our guidelines and improve the overall documentation.
+Contribute directly to the repository by creating [Pull Requests](https://github.com/2000Arion/gsc-docs/pulls). Ensure your changes align with our [guidelines](#getting-started) and improve the overall documentation.
 
 ### Discussions
 
