@@ -1,0 +1,112 @@
+name: Bug Report
+description: Create a report to help us improve the documentation.
+labels: bug
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug Location
+        Where did you find the bug? Please provide the following information:
+
+  - type: input
+    id: location-link
+    attributes:
+      label: Link to the page in the documentation
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: input
+    id: location-line
+    attributes:
+      label: (if applicable) Line numbers of the error
+      description: If this is not related to your bug report, you can leave it blank.
+      placeholder: Line 1-5
+
+  - type: textarea
+    id: location-screenshots
+    attributes:
+      label: Screenshot(s) (+ Date of capture if possible)
+      description: "Take screenshots of the bug you are reporting."
+      placeholder: Click into this field and use the option *Attach files by dragging & dropping, selecting or pasting them.*
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: "(If applicable - Reproduce the Bug)"
+      description: "What steps should be taken to reproduce the bug?"
+      value: |
+        1.
+        2.
+        3.
+        ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: change
+    attributes:
+      label: Improvement Proposal
+      description: "What do you think should be changed/improved?"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## System Information
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: What operating system are you using?
+      placeholder: e.g., iOS, ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mobile-or-desktop
+    attributes:
+      label: Are you using a Desktop or Mobile device?
+      options:
+        - Desktop
+        - Mobile
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: What browser are you using?
+      placeholder: e.g., Chrome, Safari, ...
+    validations:
+      required: true
+
+  - type: input
+    id: browser-version
+    attributes:
+      label: Browser Version
+      description: What version of the browser are you using? You can find this in the settings or update page.
+      placeholder: e.g., 22, ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional Information
+      description: Provide any additional information about the problem.
+    validations:
+      required: false
