@@ -28,7 +28,7 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'de-dE',
+    defaultLocale: 'de-DE',
     locales: ['de-DE'],
   },
 
@@ -85,9 +85,21 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
+          sidebarId: 'minecraftSidebar',
+          position: 'left',
+          label: 'Minecraft',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'genericSidebar',
+          position: 'left',
+          label: 'Discord Bots',
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docusaurus Tutorial',
         },
         { to: '/news', label: 'Neuigkeiten', position: 'right' },
         {

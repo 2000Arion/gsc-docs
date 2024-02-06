@@ -3,8 +3,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import { SpeedInsights } from '@vercel/speed-insights/react';
 import Heading from '@theme/Heading';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -28,7 +28,7 @@ function HomepageHeader() {
   );
 }
 
-export default function Home() {
+export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
@@ -38,7 +38,6 @@ export default function Home() {
       <main>
         <HomepageFeatures />
       </main>
-      <SpeedInsights /> {/* SpeedInsights-Komponente von Vercel */}
     </Layout>
   );
 }
