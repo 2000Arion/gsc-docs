@@ -33,6 +33,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install jq
+        pip install gh
 
     - name: Determine Reviewer
       env:
