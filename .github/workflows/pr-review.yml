@@ -13,6 +13,11 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
+    - name: Debug Repository Checkout
+      run: |
+        ls -al
+
+
     - name: Update GitHub CLI
       run: |
         gh --version
@@ -28,6 +33,12 @@ jobs:
         else
           echo "::set-output name=config_exists::false"
         fi
+
+    - name: Debug Config File
+      if: steps.read-config.outputs.config_exists == 'true'
+      run: |
+        echo "Config Content: ${{ steps.read-config.outputs.stdout }}"
+
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -72,6 +83,14 @@ jobs:
         ")
 
         echo "::set-output name=selected_reviewer::$selected_reviewer"
+
+    - name: Debug Determine Reviewer
+      run: |
+        echo "Config: $config"
+        echo "PR Author: $pr_author"
+        echo "Current Reviewers: $current_reviewers"
+        echo "Selected Reviewer: $selected_reviewer"
+
     
     - name: Add Reviewer to Pull Request
       if: steps.determine-reviewer.outputs.selected_reviewer != ''
