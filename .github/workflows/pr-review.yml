@@ -13,6 +13,11 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
+    - name: Update GitHub CLI
+      run: |
+        gh --version
+        gh extension install mislav/gh-pr
+
     - name: Read Config File
       id: read-config
       run: |
