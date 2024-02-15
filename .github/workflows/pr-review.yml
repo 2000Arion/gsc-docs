@@ -19,12 +19,16 @@ jobs:
 
 
     - name: Update GitHub CLI
+      env:
+        GH_TOKEN: ${{ secrets.TOKEN }}
       run: |
         gh --version
         gh extension install mislav/gh-pr
 
     - name: Read Config File
       id: read-config
+      env:
+        GH_TOKEN: ${{ secrets.TOKEN }}
       run: |
         config_file=.github/reviewers.json
         if [ -f "$config_file" ]; then
@@ -46,6 +50,8 @@ jobs:
         python-version: 3.8
 
     - name: Install Dependencies
+      env:
+        GH_TOKEN: ${{ secrets.TOKEN }}
       run: |
         python -m pip install --upgrade pip
         pip install jq
@@ -85,6 +91,8 @@ jobs:
         echo "::set-output name=selected_reviewer::$selected_reviewer"
 
     - name: Debug Determine Reviewer
+      env:
+        GH_TOKEN: ${{ secrets.TOKEN }}
       run: |
         echo "Config: $config"
         echo "PR Author: $pr_author"
@@ -94,5 +102,7 @@ jobs:
     
     - name: Add Reviewer to Pull Request
       if: steps.determine-reviewer.outputs.selected_reviewer != ''
+      env:
+        GH_TOKEN: ${{ secrets.TOKEN }}
       run: |
         gh pr review-request -R $GITHUB_REPOSITORY -B $GITHUB_HEAD_REF -u "${{ steps.determine-reviewer.outputs.selected_reviewer }}"
