@@ -8,6 +8,6 @@ Bevor du mit deinem Minecraft-Server loslegen kannst, musst du zuerst einen erst
 
 :::note[Notiz]
 
-Falls du schon einen Minecraft-Server besitzt, findest du [hier](javascript:alert("Link einfügen!")) die nächsten Schritte.
+Falls du schon einen Minecraft-Server besitzt, findest du <a href="javascript:alert('Link einfügen!')">hier</a> die nächsten Schritte.
 
 :::
