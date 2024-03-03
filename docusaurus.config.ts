@@ -1,9 +1,6 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import { inject } from '@vercel/analytics';
-
-inject();
 
 const config: Config = {
   title: 'Arion2000.xyz Gameservers',
