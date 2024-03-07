@@ -17,13 +17,12 @@ jobs:
       run: |
         ls -al
 
-
     - name: Update GitHub CLI
       env:
         GH_TOKEN: ${{ github.token }}
       run: |
         gh --version
-        gh extension install mislav/gh-pr
+        gh extension install mislav/gh-pr --version 0.11.0
 
     - name: Read Config File
       id: read-config
@@ -42,7 +41,6 @@ jobs:
       if: steps.read-config.outputs.config_exists == 'true'
       run: |
         echo "Config Content: ${{ steps.read-config.outputs.stdout }}"
-
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -99,10 +97,9 @@ jobs:
         echo "Current Reviewers: $current_reviewers"
         echo "Selected Reviewer: $selected_reviewer"
 
-    
     - name: Add Reviewer to Pull Request
       if: steps.determine-reviewer.outputs.selected_reviewer != ''
       env:
         GH_TOKEN: ${{ github.token }}
       run: |
-        gh pr review-request -R $GITHUB_REPOSITORY -B $GITHUB_HEAD_REF -u "${{ steps.determine-reviewer.outputs.selected_reviewer }}"
+        gh pr request-review -R $GITHUB_REPOSITORY -B $GITHUB_HEAD_REF -r "${{ steps.determine-reviewer.outputs.selected_reviewer }}"
