@@ -6,13 +6,7 @@
 
 /* You can override the default Infima variables here. */
 
-@font-face {
-  font-family: 'ibmplexsans';
-  src: url('https://media.arion2000.xyz/cdn/fonts/ibmplexsans/ibmplexsans.woff2') format('woff2');
-}
-
 :root {
-  font-family: 'ibmplexsans', sans-serif;
   --ifm-color-primary: #22d3ee;
   --ifm-color-primary-dark: #11c8e3;
   --ifm-color-primary-darker: #11bcd7;
