@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'ibmplexsans';
-  src: url('https://media.arion2000.xyz/cdn/fonts/ibmplexsans/ibmplexsans.woff2') format('woff2');
-}
-
 .features {
   display: flex;
   align-items: center;
@@ -25,7 +20,6 @@
   margin: 10px;
   line-height: 1.8;
   border-radius: 5px;
-  font-family: 'ibmplexsans', sans-serif;
   font-weight: 400;
   background-color: #FDF7DF;
   border: 1px solid #FEEC6F;
