@@ -22,8 +22,8 @@ jobs:
         GH_TOKEN: ${{ github.token }}
       run: |
         gh --version
-        gh extension install mislav/gh-pr@v0.11.0
-
+        gh extension install cli/cli
+        
     - name: Read Config File
       id: read-config
       env:
