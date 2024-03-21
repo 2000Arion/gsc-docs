@@ -22,7 +22,7 @@ jobs:
         GH_TOKEN: ${{ github.token }}
       run: |
         gh --version
-        gh extension install cli/cli
+        gh extension install cli/gh-cli
         
     - name: Read Config File
       id: read-config
