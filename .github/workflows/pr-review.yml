@@ -23,6 +23,7 @@ jobs:
       run: |
         gh --version
         gh extension install cli/gh-cli
+
         
     - name: Read Config File
       id: read-config
