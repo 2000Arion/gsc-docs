@@ -1,9 +1,6 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import { inject } from '@vercel/analytics';
-
-inject();
 
 const config: Config = {
   title: 'Arion2000.xyz Gameservers',
@@ -159,7 +156,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `<a href="https://www.arion2000.xyz" target="_blank">a2data</a> - ${new Date().getFullYear()}`,
+      copyright: `<p class="left"><a class="footer-link" rel="noopener nofollow noreferrer" href="https://www.arion2000.xyz" target="_blank"><img src="/img/a2data_logo_white_large.png" alt="a2data logo"/></a> &copy; ${new Date().getFullYear()}`,
     },
     prism: {
       theme: prismThemes.github,

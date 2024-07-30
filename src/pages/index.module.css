@@ -3,11 +3,17 @@
  * and scoped locally.
  */
 
+@font-face {
+  font-family: 'ibmplexsans';
+  src: url('https://media.arion2000.xyz/cdn/fonts/ibmplexsans/ibmplexsans.woff2') format('woff2');
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  font-family: 'ibmplexsans';
 }
 
 @media screen and (max-width: 997px) {

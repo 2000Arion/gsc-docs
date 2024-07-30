@@ -18,6 +18,9 @@ We maintain three branches in this repository:
 
 ## How to Contribute
 
+> [!TIP]
+> Basic knowledge of Markdown and the special features of Markdown in Docusaurus are helpful for creating appealing contributions in the documentation.
+
 ### Issues
 
 Use the [Issues](https://github.com/2000Arion/gsc-docs/issues/new/choose) tab to report bugs or suggest enhancements. We provide templates for both:
