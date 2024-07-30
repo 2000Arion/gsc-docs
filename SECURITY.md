@@ -11,7 +11,7 @@ Please refer to this section to understand which versions of the documentation a
 | Version | Supported           |
 | ------- | ------------------- |
 | 2.0.x   | :white_check_mark:  |
-| 1.1.x   | :white_check_mark:  |
+| 1.1.x   | :x:                 |
 | 1.0.0   | :x:                 |
 | 0.0.x   | :x:                 |
 
