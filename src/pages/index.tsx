@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import React from 'react';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -18,8 +19,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/tutorial/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/minecraft/erste-schritte/server-bestellen">
+            Anleitung - Server bestellen 📦
           </Link>
         </div>
       </div>

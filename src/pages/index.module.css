@@ -16,7 +16,7 @@
   font-family: 'ibmplexsans';
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 997px) {
   .heroBanner {
     padding: 2rem;
   }
