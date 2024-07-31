@@ -8,6 +8,7 @@ import { join } from "path";
 let currentCommit: string;
 let commitDate: string;
 let packageVersion: string;
+let branchName: string;
 
 try {
   // Get the current commit hash
@@ -22,14 +23,18 @@ try {
   const packageJsonPath = join(__dirname, "..", "package.json");
   const packageJson = JSON.parse(readFileSync(packageJsonPath, "utf-8"));
   packageVersion = packageJson.version;
+
+  // Get the current branch name
+  branchName = execSync("git rev-parse --abbrev-ref HEAD").toString().trim();
 } catch (error) {
   console.error(
-    "Failed to get the current commit, commit date, or package version:",
+    "Failed to get the current build data:",
     error
   );
-  currentCommit = "unknown";
-  commitDate = "unknown";
-  packageVersion = "unknown";
+  currentCommit = "commit";
+  commitDate = "Please check the log for errors";
+  packageVersion = "version";
+  branchName = "unknown";
 }
 
 const footer: Footer = {
@@ -75,7 +80,7 @@ const footer: Footer = {
       ],
     },
   ],
-  copyright: `<p><a class="footer__copyright_notice" rel="noopener nofollow noreferrer" href="https://www.arion2000.xyz" target="_blank"><img src="/img/a2data_logo_white_large.png" alt="a2data logo"/></a> &copy; ${new Date().getFullYear()}</p><div id="footer__copyright_git">Build: <a href="https://github.com/2000Arion/gsc-docs/commit/${currentCommit}">v${packageVersion}/${currentCommit}</a> - ${commitDate}</div>`,
+  copyright: `<p><a class="footer__copyright_notice" rel="noopener nofollow noreferrer" href="https://www.arion2000.xyz" target="_blank"><img src="/img/a2data_logo_white_large.png" alt="a2data logo"/></a> &copy; ${new Date().getFullYear()}</p><div id="footer__copyright_git">Build: <a href="https://github.com/2000Arion/gsc-docs/commit/${currentCommit}">v${packageVersion}/${currentCommit}</a> (${branchName}) - ${commitDate}</div>`,
 };
 
 export default footer;
