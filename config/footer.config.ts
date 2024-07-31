@@ -24,15 +24,22 @@ try {
   const packageJson = JSON.parse(readFileSync(packageJsonPath, "utf-8"));
   packageVersion = packageJson.version;
 
-  // Get the current branch name
-  branchName = execSync("git rev-parse --abbrev-ref HEAD").toString().trim();
+  // Get the branch name containing the current commit
+  const branches = execSync(`git branch -a --contains ${currentCommit}`)
+    .toString()
+    .split('\n')
+    .map(branch => branch.trim())
+    .filter(branch => !branch.includes('remotes/') && branch.length > 0);
+
+  // Select the first branch name that is not a remote branch
+  branchName = branches.length > 0 ? branches[0] : "unknown";
 } catch (error) {
   console.error(
-    "Failed to get the current build data:",
+    "Failed to get the current commit, commit date, package version, or branch name:",
     error
   );
   currentCommit = "commit";
-  commitDate = "Please check the log for errors";
+  commitDate = "Please check the log for errors.";
   packageVersion = "version";
   branchName = "unknown";
 }
