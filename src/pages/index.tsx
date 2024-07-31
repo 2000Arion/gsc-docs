@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/minecraft/erste-schritte/server-bestellen">
+            to="/docs/minecraft/server-bestellen">
             Anleitung - Server bestellen 📦
           </Link>
         </div>
