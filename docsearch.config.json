@@ -1,18 +1,13 @@
 {
   "index_name": "gsc-docs",
-  "start_urls": [
-    "https://docs.arion2000.xyz/"
-  ],
-  "sitemap_urls": [
-    "https://docs.arion2000.xyz/sitemap.xml"
-  ],
+  "start_urls": ["https://docs.arion2000.xyz/"],
+  "sitemap_urls": ["https://docs.arion2000.xyz/sitemap.xml"],
   "sitemap_alternate_links": true,
-  "stop_urls": [
-    "/docs/tutorial"
-  ],
+  "stop_urls": ["/docs/tutorial"],
   "selectors": {
     "lvl0": {
-      "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, '>      "type": "xpath",
+      "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
+      "type": "xpath",
       "global": true,
       "default_value": "Documentation"
     },
