@@ -2,11 +2,10 @@
 
 Documentation for [Arion2000.xyz Gameservers](https://panel.arion2000.xyz)
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus](https://docusaurus.io/).
 
 > [!IMPORTANT]
 > **Want to contribute?** We would be very glad if you would support us in this project! You can find all important information [here](https://github.com/2000Arion/gsc-docs/blob/main/CONTRIBUTING.md).
-
 
 ## Running the development server
 
