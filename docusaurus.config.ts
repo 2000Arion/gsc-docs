@@ -80,9 +80,9 @@ const config: Config = {
       typesenseServerConfig: {
         nodes: [
           {
-            host: "panel.nodes.arion2000.xyz",
-            port: 8108,
-            protocol: "http",
+            host: "gsc-docs-search.servers.com.de",
+            port: 443,
+            protocol: "https",
           },
         ],
         apiKey: process.env.TYPESENSE_API_KEY,
