@@ -14,7 +14,7 @@ import 'dotenv/config';
 const config: Config = {
   title: "Arion2000.xyz Gameservers",
   tagline: "Dokumentation",
-  favicon: "img/favicon.ico",
+  favicon: "/assets/images/favicon.ico",
 
   url: "https://docs.arion2000.xyz",
   baseUrl: "/",
@@ -38,7 +38,7 @@ const config: Config = {
       respectPrefersColorScheme: false,
     },
 
-    image: "img/docusaurus-social-card.jpg",
+    image: "/assets/images/docusaurus-social-card.jpg",
     typesense: search,
 
     navbar: navbar,
