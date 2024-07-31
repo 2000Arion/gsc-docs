@@ -85,7 +85,7 @@ const config: Config = {
             protocol: "http",
           },
         ],
-        apiKey: process.env.TYPESENSE_API_KEY,
+        apiKey: process.env.REACT_APP_TYPESENSE_API_KEY,
       },
 
       // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
