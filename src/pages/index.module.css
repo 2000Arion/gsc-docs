@@ -14,7 +14,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  font-family: "ibmplexsans"
+  font-family: "ibmplexsans";
 }
 
 @media screen and (max-width: 997px) {
