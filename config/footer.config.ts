@@ -35,7 +35,7 @@ try {
   branchName = branches.length > 0 ? branches[0] : "unknown";
 } catch (error) {
   console.error(
-    "Failed to get the current commit, commit date, package version, or branch name:",
+    "Failed to get the build data:",
     error
   );
   currentCommit = "commit";
