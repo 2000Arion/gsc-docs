@@ -7,7 +7,6 @@ This website is built using [Docusaurus](https://docusaurus.io/).
 > [!IMPORTANT]
 > **Want to contribute?** We would be very glad if you would support us in this project! You can find all important information [here](https://github.com/2000Arion/gsc-docs/blob/main/CONTRIBUTING.md).
 
-
 ## Running the development server
 
 To preview your changes as you edit the files, you can run a local development server that will serve your website and reflect the latest changes.

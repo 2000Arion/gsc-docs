@@ -21,13 +21,13 @@ jobs:
           api-key: ${{ secrets.TYPESENSE_API_KEY }}
       
           # The hostname or IP address of your Typesense server. Required.
-          host: panel.nodes.arion2000.xyz
+          host: gsc-docs-search.servers.com.de
       
           # The port on which your Typesense server is listening. Optional. Default: 8108.
-          port: 8108
+          port: 443
       
           # The protocol to use when connecting to your Typesense server. Optional. Default: http.
-          protocol: http
+          protocol: https
       
           # The path to your DocSearch config file. Optional. Default: docsearch.config.json.
           config: docsearch.config.json
