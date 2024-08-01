@@ -37,7 +37,6 @@ const config: Config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
-
     image: "/assets/images/docusaurus-social-card.jpg",
     typesense: search,
 
