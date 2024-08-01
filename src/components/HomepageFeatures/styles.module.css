@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'ibmplexsans';
+  src: url('https://media.arion2000.xyz/cdn/fonts/ibmplexsans/ibmplexsans.woff2') format('woff2');
+}
+
+h1, h3 {
+  font-family: 'ibmplexsans';
+}
+
 .features {
   display: flex;
   align-items: center;

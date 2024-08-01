@@ -6,7 +6,7 @@
   "stop_urls": [
     "/docs/generic",
     "/docs/tutorial",
-    "/docs/minecraft/erste-schritte/test"
+    "/docs/tutorial/*"
   ],
   "selectors": {
     "lvl0": {
