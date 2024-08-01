@@ -39,7 +39,7 @@ const config: Config = {
     },
     image: "/assets/images/docusaurus-social-card.jpg",
     typesense: search,
-
+    
     navbar: navbar,
     footer: footer,
     prism: {
