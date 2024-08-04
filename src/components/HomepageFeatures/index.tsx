@@ -37,7 +37,7 @@ const FeatureList: FeatureItem[] = [
         <label>
           <div className={styles.alert}>
             <span className={styles.alertText}>
-              <img src="/img/info_icon.svg" className={styles.infoSvg}></img>
+              <img src="/assets/images/info_icon.svg" className={styles.infoSvg}></img>
               &nbsp;Es würde uns freuen, wenn du auf&nbsp;
               <a href="https://github.com/2000Arion/gsc-docs" target="_blank">
                 GitHub

@@ -1,5 +1,6 @@
 ---
 description: Du hast noch keinen Server? Hier wird erklärt, wie du einen bestellen kannst.
+sidebar_position: 2
 ---
 
 # Server bestellen
@@ -8,12 +9,12 @@ Bevor du mit deinem Minecraft-Server loslegen kannst, musst du zuerst einen erst
 
 :::note[Notiz]
 
-Falls du schon einen Minecraft-Server besitzt, findest du <a href="javascript:alert('Link einfügen!')">hier</a> die nächsten Schritte.
+Falls du schon einen Minecraft-Server besitzt, findest du [hier](/docs/category/erste-schritte) die nächsten Schritte.
 
 :::
 
 1. Rufe https://mc.a2data.site auf. Dort findest du eine Übersicht über alle Angebote und Preise der Gameservercloud.
-   
+
 2. Wähle die gewünschte Kategorie und Laufzeit deines Servers aus und klicke auf "Auswählen" links neben dem Server, den du bestellen möchtest.
 
 :::tip[Hinweise]
@@ -34,9 +35,9 @@ In der Gameservercloud gibt es 3 Kategorien für Server:
    
 6. Nachdem die Zahlung abgeschlossen ist, erhältst du eine automatisierte E-Mail, in der du einen Link findest, mit dem du deinen Account im Panel einrichten kannst.
     
-7.  Dann musst du nur noch eine Weile warten, bis dein Server die Installation abgeschlossen hat und verfügbar ist. Sobald dies der Fall ist, erhältst du eine weitere automatisierte E-Mail.
+7. Dann musst du nur noch eine Weile warten, bis dein Server die Installation abgeschlossen hat und verfügbar ist. Sobald dies der Fall ist, erhältst du eine weitere automatisierte E-Mail.
 
-8.  **Viel Spaß mit deinem Gameserver!**
+8. **Viel Spaß mit deinem Gameserver!**
 
 :::important[Hilfe]
 
