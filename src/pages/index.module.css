@@ -3,10 +3,13 @@
  * and scoped locally.
  */
 
-@font-face {
-  font-family: "ibmplexsans";
-  src: url("https://media.arion2000.xyz/cdn/fonts/ibmplexsans/ibmplexsans.woff2")
-    format("woff2");
+ @font-face {
+  font-family: 'ibmplexsans-medium';
+  src: url('https://media.arion2000.xyz/cdn/fonts/ibmplexsans/IBMPlexSans-Medium.eot'); /* IE9 Compat Modes */
+  src: url('https://media.arion2000.xyz/cdn/fonts/ibmplexsans/IBMPlexSans-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://media.arion2000.xyz/cdn/fonts/ibmplexsans/IBMPlexSans-Medium.woff') format('woff'), /* Modern Browsers */
+       url('https://media.arion2000.xyz/cdn/fonts/ibmplexsans/IBMPlexSans-Medium_1.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://media.arion2000.xyz/cdn/fonts/ibmplexsans/IBMPlexSans-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 .heroBanner {
@@ -14,7 +17,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  font-family: "ibmplexsans";
+  font-family: "ibmplexsans-medium";
 }
 
 @media screen and (max-width: 997px) {
