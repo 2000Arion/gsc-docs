@@ -18,7 +18,7 @@ Manchmal werden E-Mails von unbekannten Absendern automatisch als Spam markiert 
 
 ### Whiteliste die Absenderadresse
 
-Stelle sicher, dass die E-Mail-Adresse panel@email.arion2000.xyz in deiner E-Mail-Kontaktliste oder Adressbuch hinzugefügt ist. Du könntest auch probieren, einen Filter zu erstellen, der verhindert, dass die E-Mails im Spam-Ordner landen. Wie genau man einen Filter erstellt, wird auch [hier](https://arion2000.tawk.help/article/64be6e3954d1b209d02369c2) erklärt.
+Stelle sicher, dass die E-Mail-Adressen panel@email.arion2000.xyz, tickets@arion2000.xyz und tickets@a2data.p.tawk.email in deiner E-Mail-Kontaktliste oder Adressbuch hinzugefügt ist. Du könntest auch probieren, einen Filter zu erstellen, der verhindert, dass die E-Mails im Spam-Ordner landen. Wie genau man einen Filter erstellt, wird auch [hier](https://arion2000.tawk.help/article/64be6e3954d1b209d02369c2) erklärt.
 
 **Schritt 3:**
 
@@ -30,4 +30,4 @@ Vergewissere dich, dass du in dem E-Mail-Postfach nach E-Mails vom Panel suchst,
 
 ### Kontaktiere den Support
 
-Wenn die Probleme weiterhin bestehen, kontaktiere uns entweder, falls möglich, per E-Mail an tickets@arion2000.xyz oder erstelle ein Ticket oder starte einen Live-Chat [im allgemeinen arion2000.xyz-Support-Center](https://arion2000.tawk.help). Gib dabei alle relevanten Informationen an, einschließlich den Schritten, die du schon durchgeführt hast, deinen E-Mail-Einstellungen und eine genaue Beschreibung des Problems. Anschließend können wir weitere Diagnosen durchführen und eine Lösung für das Problem finden.
+Wenn die Probleme weiterhin bestehen, kontaktiere uns entweder, falls möglich, per E-Mail an tickets@arion2000.xyz oder starte einen Live-Chat über die Sprechblase unten rechts auf dieser Seite. Gib dabei alle relevanten Informationen an, einschließlich den Schritten, die du schon durchgeführt hast, deinen E-Mail-Einstellungen und eine genaue Beschreibung des Problems. Anschließend können wir weitere Diagnosen durchführen und eine Lösung für das Problem finden.
