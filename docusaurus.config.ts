@@ -6,6 +6,7 @@ import footer from "./config/footer.config";
 import search from "./config/search.config";
 import i18n from "./config/i18n.config";
 import presets from "./config/presets.config";
+import scripts from "./config/scripts.config";
 
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
@@ -47,6 +48,8 @@ const config: Config = {
       darkTheme: prismThemes.oneDark,
     },
   } satisfies Preset.ThemeConfig,
+
+  scripts: scripts,
 };
 
 export default config;
