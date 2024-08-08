@@ -52,8 +52,16 @@ const footer: Footer = {
       title: "Docs",
       items: [
         {
-          label: "Tutorial",
-          to: "/docs/tutorial/intro",
+          label: "Server bestellen",
+          to: "/docs/minecraft/server-bestellen",
+        },
+        {
+          label: "Minecraft Server",
+          to: "/docs/minecraft",
+        },
+        {
+          label: "Discord Bots",
+          to: "/docs/generic",
         },
       ],
     },
