@@ -82,6 +82,10 @@ const footer: Footer = {
           href: "https://panel.arion2000.xyz/",
         },
         {
+          label: "Status",
+          href: "https://status.arion2000.xyz/"
+        },
+        {
           label: "GitHub",
           href: "https://github.com/2000Arion/gsc-docs",
         },
