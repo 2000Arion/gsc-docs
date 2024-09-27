@@ -41,6 +41,6 @@ In der Gameservercloud gibt es 3 Kategorien für Server:
 
 :::important[Hilfe]
 
-**Kommen manche E-Mails nicht an?** [Hier](/support/e) findest du Hilfe.
+**Kommen manche E-Mails nicht an?** [Hier](/support/email-troubleshooting) findest du Hilfe.
 
 :::
