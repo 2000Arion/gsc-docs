@@ -90,13 +90,17 @@ const footer: Footer = {
           href: "https://panel.arion2000.xyz/",
         },
         {
+          label: "Status",
+          href: "https://status.arion2000.xyz/"
+        },
+        {
           label: "GitHub",
           href: "https://github.com/2000Arion/gsc-docs",
         },
       ],
     },
   ],
-  copyright: `<p><a class="footer__copyright_notice" rel="noopener nofollow noreferrer" href="https://www.arion2000.xyz" target="_blank"><img src="/assets/images/footer_copyright_watermark.png" alt="a2data logo"/></a> &copy; ${new Date().getFullYear()}</p><div id="footer__copyright_git">Build: <a href="https://github.com/2000Arion/gsc-docs/commit/${currentCommit}">v${packageVersion}/${currentCommit}</a> - ${commitDate}</div>`,
+  copyright: `<p>&copy; ${new Date().getFullYear()} <a class="footer__copyright_notice" rel="noopener nofollow noreferrer" href="https://www.arion2000.xyz" target="_blank"><img src="/assets/images/footer_copyright_watermark.png" alt="a2data logo"/></a></p><div id="footer__copyright_git">Build: <a href="https://github.com/2000Arion/gsc-docs/commit/${currentCommit}">v${packageVersion}/${currentCommit}</a> - ${commitDate}</div>`,
 };
 
 export default footer;
