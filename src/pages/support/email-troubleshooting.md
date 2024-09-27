@@ -16,9 +16,9 @@ Manchmal werden E-Mails von unbekannten Absendern automatisch als Spam markiert 
 
 **Schritt 2:**
 
-### Whiteliste die Absenderadresse
+### Whiteliste die Absenderadressen
 
-Stelle sicher, dass die E-Mail-Adressen panel@email.arion2000.xyz, tickets@arion2000.xyz und tickets@a2data.p.tawk.email in deiner E-Mail-Kontaktliste oder Adressbuch hinzugefügt ist. Du könntest auch probieren, einen Filter zu erstellen, der verhindert, dass die E-Mails im Spam-Ordner landen. Wie genau man einen Filter erstellt, wird auch [hier](https://arion2000.tawk.help/article/64be6e3954d1b209d02369c2) erklärt.
+Stelle sicher, dass die E-Mail-Adressen panel@m.arion2000.xyz, tickets@arion2000.xyz und tickets@a2data.p.tawk.email in deiner E-Mail-Kontaktliste oder Adressbuch hinzugefügt ist. Du könntest auch probieren, einen Filter zu erstellen, der verhindert, dass die E-Mails im Spam-Ordner landen. Wie genau man einen Filter erstellt, wird auch [hier](https://arion2000.tawk.help/article/64be6e3954d1b209d02369c2) erklärt.
 
 **Schritt 3:**
 
