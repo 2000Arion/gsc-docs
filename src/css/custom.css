@@ -60,7 +60,7 @@
 [data-theme="dark"] .DocSearch {
   --docsearch-text-color: var(--ifm-font-color-base);
   --docsearch-muted-color: var(--ifm-color-secondary-darkest);
-  --docsearch-container-background: #131a20;
+  --docsearch-container-background: #131a20cf;
   /* Modal */
   --docsearch-modal-background: var(--ifm-background-color);
   /* Search box */
