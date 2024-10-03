@@ -16,7 +16,8 @@ const FeatureList: FeatureItem[] = [
     id: "/docs/minecraft",
     description: (
       <>
-        Erfahre, wie du deinen Minecraft Server einrichten und personalisieren, Plugins oder Mods hochladen und andere Einstellungen vornehmen kannst.
+        Erfahre, wie du deinen Minecraft Server einrichten und personalisieren,
+        Plugins oder Mods hochladen und andere Einstellungen vornehmen kannst.
       </>
     ),
   },
@@ -25,7 +26,8 @@ const FeatureList: FeatureItem[] = [
     id: "/docs/generic",
     description: (
       <>
-        Erfahre, wie du ein GitHub Repository verbinden oder wie du mit Websockets arbeiten kannst.
+        Erfahre, wie du ein GitHub Repository verbinden oder wie du mit
+        Websockets arbeiten kannst.
       </>
     ),
   },
@@ -37,7 +39,40 @@ const FeatureList: FeatureItem[] = [
         <label>
           <div className={styles.alert}>
             <span className={styles.alertText}>
-              <img src="/assets/images/info_icon.svg" className={styles.infoSvg}></img>
+              <svg
+                className={styles.infoSvg}
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="style=bulk">
+                  <g id="warning-box">
+                    <path
+                      id="vector (Stroke)"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.25 8C1.25 4.27208 4.27208 1.25 8 1.25H16C19.7279 1.25 22.75 4.27208 22.75 8V16C22.75 19.7279 19.7279 22.75 16 22.75H8C4.27208 22.75 1.25 19.7279 1.25 16V8Z"
+                      fill="#BFBFBF"
+                    />
+                    <path
+                      id="vector (Stroke)_2"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.25C12.4142 6.25 12.75 6.58579 12.75 7V14.1047C12.75 14.5189 12.4142 14.8547 12 14.8547C11.5858 14.8547 11.25 14.5189 11.25 14.1047V7C11.25 6.58579 11.5858 6.25 12 6.25Z"
+                      fill="#000000"
+                    />
+                    <path
+                      id="ellipse (Stroke)"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11 17C11 16.4477 11.4477 16 12 16H12.01C12.5623 16 13.01 16.4477 13.01 17C13.01 17.5523 12.5623 18 12.01 18H12C11.4477 18 11 17.5523 11 17Z"
+                      fill="#000000"
+                    />
+                  </g>
+                </g>
+              </svg>
               &nbsp;Es würde uns freuen, wenn du auf&nbsp;
               <a href="https://github.com/2000Arion/gsc-docs" target="_blank">
                 GitHub
