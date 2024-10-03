@@ -1,7 +1,7 @@
 {
   "name": "gsc-docs",
-  "version": "2.2.5",
-  "private": true,
+  "version": "2.2.7",
+  "private": false,
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start --port 80",
