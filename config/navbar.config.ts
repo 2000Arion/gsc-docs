@@ -21,12 +21,6 @@ const navbar: Omit<Navbar, "style" | "hideOnScroll"> = {
       position: "left",
       label: "Discord Bots",
     },
-    {
-      type: "docSidebar",
-      sidebarId: "tutorialSidebar",
-      position: "left",
-      label: "Docusaurus Tutorial",
-    },
     { to: "/news", label: "Neuigkeiten", position: "right" },
     {
       href: "https://panel.arion2000.xyz",
