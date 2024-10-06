@@ -37,7 +37,10 @@ const config: Config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
-    image: "/assets/images/docusaurus-social-card.jpg",
+    metadata: [
+      { name: 'og:site_name', content: 'Arion2000.xyz Gameservers' },
+      { name: 'theme-color', content: '#22d3ee' },
+    ],
     typesense: search,
 
     navbar: navbar,
