@@ -1,5 +1,5 @@
 ---
-slug: 8c7fb3bf
+slug: "2024/10/JpU0JHuU"
 title: "Status-Updates per E-Mail erhalten"
 authors: [arion2000]
 tags: [Statusupdates, Benachrichtigungen, Wartungsarbeiten, Service-Ankündigungen]
