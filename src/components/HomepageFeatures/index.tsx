@@ -36,7 +36,7 @@ const FeatureList: FeatureItem[] = [
     id: "#",
     description: (
       <>
-        <label>
+        <div>
           <div className={styles.alert}>
             <span className={styles.alertText}>
               <svg
@@ -80,7 +80,7 @@ const FeatureList: FeatureItem[] = [
               &nbsp;beim Aufbau der Dokumentation mithilfst!&nbsp;
             </span>
           </div>
-        </label>
+        </div>
       </>
     ),
   },
