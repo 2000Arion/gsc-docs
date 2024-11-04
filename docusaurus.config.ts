@@ -31,6 +31,10 @@ const config: Config = {
 
   presets: presets,
 
+  future: {
+    experimental_faster: true,
+  },
+
   themeConfig: {
     colorMode: {
       defaultMode: "dark",
