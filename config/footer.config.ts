@@ -100,7 +100,7 @@ const footer: Footer = {
       ],
     },
   ],
-  copyright: `<p>&copy; ${new Date().getFullYear()} <a class="footer__copyright_notice" rel="noopener nofollow noreferrer" href="https://www.arion2000.xyz" target="_blank"><img src="/assets/images/a2data_logo_white-fc149158da7ab2b090b328f9e9a51006.png" alt="Logo von a2data" /></a></p><div id="footer__copyright_git">Build: <a href="https://github.com/2000Arion/gsc-docs/commit/${currentCommit}">v${packageVersion}/${currentCommit}</a> - ${commitDate}</div>`,
+  copyright: `<p>&copy; ${new Date().getFullYear()} <a class="footer__copyright_notice" rel="noopener nofollow noreferrer" href="https://www.arion2000.xyz" target="_blank"><img src="https://storage.a2data.site/storage/api/public/dl/uio1drBA" alt="Logo von a2data" /></a></p><div id="footer__copyright_git">Build: <a href="https://github.com/2000Arion/gsc-docs/commit/${currentCommit}">v${packageVersion}/${currentCommit}</a> - ${commitDate}</div>`,
 };
 
 export default footer;
