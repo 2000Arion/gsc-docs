@@ -1,6 +1,5 @@
 import type { Footer } from "@docusaurus/theme-common";
 import { execSync } from "child_process";
-import { format } from "date-fns";
 import { toZonedTime, format as formatTz } from "date-fns-tz";
 import { de } from "date-fns/locale";
 import { readFileSync } from "fs";
