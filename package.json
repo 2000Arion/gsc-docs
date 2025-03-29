@@ -1,6 +1,6 @@
 {
   "name": "gsc-docs",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "private": false,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -49,6 +49,6 @@
     ]
   },
   "engines": {
-    "node": "22.14.0"
+    "node": "22"
   }
 }
