@@ -3,18 +3,29 @@
   "extends": [
     "config:recommended"
   ],
-  "labels": ["dependencies"],
+  "labels": [
+    "dependencies"
+  ],
   "pruneStaleBranches": true,
   "rangeStrategy": "bump",
   "packageRules": [
     {
-      "matchPackageNames": ["node"],
-      "updateTypes": ["major"],
+      "matchPackageNames": [
+        "node"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
       "enabled": true
     },
     {
-      "matchPackageNames": ["node"],
-      "updateTypes": ["minor", "patch"],
+      "matchPackageNames": [
+        "node"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "enabled": false
     }
   ]
