@@ -5,5 +5,17 @@
   ],
   "labels": ["dependencies"],
   "pruneStaleBranches": true,
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "matchPackageNames": ["node"],
+      "updateTypes": ["major"],
+      "enabled": true
+    },
+    {
+      "matchPackageNames": ["node"],
+      "updateTypes": ["minor", "patch"],
+      "enabled": false
+    }
+  ]
 }
