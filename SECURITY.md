@@ -10,14 +10,14 @@ Please refer to this section to understand which versions of the documentation a
 
 | Version | Supported           |
 | ------- | ------------------- |
-| 2.2.x   | :white_check_mark:  |
-| 2.1.x   | :white_check_mark:² |
-| 2.0.x   | :warning:¹          |
+| 2.3.x   | :warning:¹          |
+| 2.2.x   | :x:                 |
+| 2.1.x   | :x:                 |
+| 2.0.x   | :x:                 |
 | 1.x.x   | :x:                 |
 | 0.0.x   | :x:                 |
 
-¹ No more updates, support for this version will be discontinued on 2024-08-04
-² Support for this version will be discontinued on 2024-08-18
+¹ This project is no longer actively maintained and will only receive critical (or automated) security updates in the future. The new Gameservercloud Docs project can be found at https://github.com/2000Arion/gsc-wiki.
 
 ## Reporting a Vulnerability
 
