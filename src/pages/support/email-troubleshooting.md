@@ -12,7 +12,7 @@ Wenn du Schwierigkeiten beim Empfang von automatisierten E-Mails vom Panel hast,
 
 ### Überprüfe den Spam-Ordner
 
-Manchmal werden E-Mails von unbekannten Absendern automatisch als Spam markiert und landen im Spam-Ordner. Öffne deinen E-Mail-Spam-Ordner und sieh nach, ob die E-Mails von panel@email.arion2000.xyz dort gelandet sind. Wenn ja, markiere sie als "Kein Spam", um sicherzustellen, dass zukünftige E-Mails im Posteingang landen.
+Manchmal werden E-Mails von unbekannten Absendern automatisch als Spam markiert und landen im Spam-Ordner. Öffne deinen E-Mail-Spam-Ordner und sieh nach, ob die E-Mails von panel@m.arion2000.xyz dort gelandet sind. Wenn ja, markiere sie als "Kein Spam", um sicherzustellen, dass zukünftige E-Mails im Posteingang landen.
 
 **Schritt 2:**
 
