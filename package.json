@@ -22,7 +22,7 @@
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "clsx": "^2.1.1",
-    "date-fns": "^4.1.0",
+    "date-fns": "^4.4.0",
     "date-fns-tz": "^3.2.0",
     "docusaurus-theme-search-typesense": "^0.26.0",
     "dotenv": "^17.4.2",
